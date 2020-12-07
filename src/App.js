@@ -3,10 +3,8 @@ import {useState, useEffect} from "react"
 
 function App() {
 
-  let url = "https://pokeapi.co/api/v2/type/"
- 
   let [data,setData] = useState([])
- 
+  let [url,setUrl] = useState("https://pokeapi.co/api/v2/type/")
   let [pokemon,setPokemon] = useState([])
   let [num,setNum] = useState(0)
   let [nombresAleatorios,setNombresAleatorios] = useState(0)
